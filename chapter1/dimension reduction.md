@@ -39,3 +39,14 @@ and remove outliers)
 
 tricks:
 * It is common to use 80% of the data for training and hold out 20% for testing.
+
+## **cross-validation:**  
+ the training set is split into complementary subsets, and each model is trained against a different combination of these subsets and validated against the remaining parts. Once the model type and hyperparameters have been selected, a final model is trained using these hyperparameters on the full training set,and the generalized error is measured on the test set.
+           
+
+
+##pipeline:
+A sequence of data processing components is called a data pipeline.
+
+##RMSE(L2) vs MSE(L1)
+_The higher the norm index, the more it focuses on large values and neglects small  ones. This is why the RMSE is more sensitive to outliers than the MAE_
