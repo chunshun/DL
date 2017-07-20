@@ -51,3 +51,6 @@ A sequence of data processing components is called a data pipeline.
 ## RMSE(L2) vs MSE(L1)    
 _The higher the norm index, the more it focuses on large values and neglects small  ones. This is why the RMSE is more sensitive to outliers than the MAE.But when outliers are exponentially rare (like in a bell-shaped curve), the RMSE performs
 very well and is generally preferred._
+
+##OneHotEncoder
+Scikit-Learn provides a OneHotEncoder encoder to convert integer categorical values into one-hot vectors.
