@@ -1,4 +1,4 @@
-# A related task is dimensionality reduction, in which the goal is to simplify the datawithout losing too much information.
+# A related task is dimensionality reduction, in which the goal is to simplify the data without losing too much information.
 1. feature extraction
 2. 
 
