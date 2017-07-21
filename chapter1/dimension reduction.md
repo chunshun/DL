@@ -36,7 +36,6 @@ and remove outliers)
 * Feeding better features to the learning algorithm (feature engineering)
 *  Reducing the constraints on the model (e.g., reducing the regularization hyperparameter)
 
-
 tricks:
 * It is common to use 80% of the data for training and hold out 20% for testing.
 
@@ -62,3 +61,11 @@ There are two common ways to get all attributes to have the same scale: min-max 
 * Min-max scaling (many people call this normalization) is quite simple: values are shifted and rescaled so that they end up ranging from 0 to 1. We do this by subtracting the min value and dividing by the max minus the min. Scikit-Learn provides a transformer called MinMaxScaler for this. It has a feature_range hyperparameter that lets you change the range if you don’t want 0–1 for some reason.
 
 * Standardization is quite different: first it subtracts the mean value (so standardized values always have a zero mean), and then it divides by the variance so that the resulting distribution has unit variance
+
+        As with all the transformations, it is important to fit the scalers to
+        the training data only, not to the full dataset (including the test set).
+        Only then can you use them to transform the training set and the
+        test set (and new data).
+
+**DecisionTreeRegressor**
+This is a powerful model, capable of finding complex nonlinear relationships in the data
