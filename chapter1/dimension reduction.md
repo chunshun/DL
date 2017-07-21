@@ -54,3 +54,11 @@ very well and is generally preferred._
 
 ##OneHotEncoder
 Scikit-Learn provides a OneHotEncoder encoder to convert integer categorical values into one-hot vectors.
+
+## Feature Scaling
+One of the most important transformations you need to apply to your data is feature scaling
+There are two common ways to get all attributes to have the same scale: min-max scaling and standardization.
+
+* Min-max scaling (many people call this normalization) is quite simple: values are shifted and rescaled so that they end up ranging from 0 to 1. We do this by subtracting the min value and dividing by the max minus the min. Scikit-Learn provides a transformer called MinMaxScaler for this. It has a feature_range hyperparameter that lets you change the range if you don’t want 0–1 for some reason.
+
+* Standardization is quite different: first it subtracts the mean value (so standardized values always have a zero mean), and then it divides by the variance so that the resulting distribution has unit variance
