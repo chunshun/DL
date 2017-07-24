@@ -67,5 +67,8 @@ There are two common ways to get all attributes to have the same scale: min-max 
         Only then can you use them to transform the training set and the
         test set (and new data).
 
-**DecisionTreeRegressor**
+## DecisionTreeRegressor
 This is a powerful model, capable of finding complex nonlinear relationships in the data
+
+## Grid search
+One way to do that would be to fiddle with the hyperparameters manually, until you find a great combination of hyperparameter values. This would be very tedious work, and you may not have time to explore many combinations.
